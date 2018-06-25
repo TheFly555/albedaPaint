@@ -1,0 +1,149 @@
+html,body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+
+.navbar-top {
+  color: black;
+  background-color:  #454545;
+  height: 50px;
+  width: 100%;
+  border: 2px solid black;
+}
+
+.administrator-button {
+  float: right;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  height: 50px;
+  width: 15%;
+  text-align: center;
+
+
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+
+}
+
+.logo{
+  float: left;
+  border-right: 2px solid black;
+  height: 50px;
+  width: 15%;
+  text-align: center;
+}
+
+.navigation-left {
+  float: left;
+  background-color:  #454545;
+  height: 100%;
+  width: 15%;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.navigation-left-list{
+  list-style: none;
+}
+
+.nav-icon-div{
+  float: left;
+  height: 50px;
+  width: 10%;
+  margin-left: 5px;
+  margin-right: 5px
+
+}
+.nav-icon {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.message-dashboard{
+  height: 50px;
+  background-color:  #b4b4b4;
+  /* width: 60%; */
+  margin-left: 220px;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-left: 5px
+}
+
+.container{
+  margin-left: 220px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.klanten-table{
+  width: 100%;
+  border: 1px solid black;
+}
+
+table tr th{
+  width: 16%;
+  height: 50px;
+}
+
+table tr td{
+  width: 16%;
+  height: 40px;
+  text-align: center;
+}
+
+.inputForm{
+  width: 300px;
+  height: 30px;
+  border-radius: 3px;
+  border: 2px solid  #898989 ;
+}
+
+ .formText{
+   text-align: left;
+
+ }
+
+.table-form{
+  width: 70%;
+}
+
+.alertText{
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+    width: 60%;
+    border: 4px solid white;
+    border-radius: 15px;
+    margin-left: 220px;
+}
+
+.succesText{
+    padding: 20px;
+    background-color: #33cc59;
+    color: white;
+    margin-bottom: 15px;
+    width: 60%;
+    border: 4px solid white;
+    border-radius: 15px;
+    margin-left: 220px;
+}
+
+.pull-right {
+  float: right;
+}
+
+.offerte-table {
+  width: 100%;
+  border: 1px solid black;
+}
