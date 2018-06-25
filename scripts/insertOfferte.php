@@ -3,10 +3,10 @@
   include_once 'connect.php';
 
   //Constanten
-  $insertOfferteDate = $_POST['insertOfferteDate'];
   $insertOfferteWerkzaamheden = $_POST['insertOfferteWerkzaamheden'];
   $insertOffertePrijs = $_POST['insertOffertePrijs'];
-  $selectOfferteStatus = $_POST['selectOfferteStatus'];
+  $insertOfferteDate = $_POST['insertOfferteDate'];
+  $insertOfferteKlant = $_POST['insertOfferteKlant'];
   $insertOfferteSubmit = $_POST['insertOfferteSubmit'];
 
   //if Condition: check if submit button is clicked and redirect
@@ -15,8 +15,7 @@
   }
   //Else condition: Add entry to the database
   else{
-    $sqlInsert = "INSERT INTO offerte (offerte_werkzaamheden, offertedatum, offerte_prijs, offerte_status)
-     VALUES ('$insertOfferteWerkzaamheden', '$insertOfferteDate', $insertOffertePrijs, 'Nieuw');";
+    $sqlInsert = "INSERT INTO offerte (offerte_werkzaamheden, offerte_prijs, offertedatum, offerte_status, klant_id) VALUES ('$insertOfferteWerkzaamheden', '$insertOffertePrijs', '$insertOfferteDate', 'Nieuw', '$insertOfferteKlant');";
     mysqli_query($conn, $sqlInsert);
     header("location: ../pages/offertes.php?insert=succes");
   }

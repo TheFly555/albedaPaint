@@ -13,7 +13,7 @@
   }
   //Else condition: Add entry to the database
   else{
-    $sqlInsert = "UPDATE klant SET klant_memo='$insertMemo' WHERE id = $selectKlant";
+    $sqlInsert = "UPDATE klant SET klant_memo='$insertMemo' WHERE klant_id = $selectKlant";
     mysqli_query($conn, $sqlInsert);
     header("location: ../pages/klanten.php?insert=succes");
   }

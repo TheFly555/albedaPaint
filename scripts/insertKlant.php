@@ -22,8 +22,7 @@
   }
   //Else condition: Add entry to the database
   else{
-    $sqlInsert = "INSERT INTO klant (klant_naam, klant_email, klant_adres, klant_postcode, klant_woonplaats)
-     VALUES ('$insertKlantNaam', '$insertKlantEmail', '$insertKlantAdres', '$insertKlantPostcode', '$insertKlantWoonplaats');";
+    $sqlInsert = "INSERT INTO klant (klant_naam, klant_email, klant_adres, klant_postcode, klant_woonplaats) VALUES ('$insertKlantNaam', '$insertKlantEmail', '$insertKlantAdres', '$insertKlantPostcode', '$insertKlantWoonplaats');";
     mysqli_query($conn, $sqlInsert);
     header("location: ../pages/klanten.php?insert=succes");
   }

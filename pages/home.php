@@ -22,19 +22,12 @@
     </nav>
     <div class="navigation-left">
       <ul class="navigation-left-list">
-        <li><a href="klanten.php">klanten</a></li>
+        <li><a href="klanten.php">Klanten</a></li>
         <li><a href="offertes.php">Offertes</a></li>
         <li><a href="facturen.php">Facturen</a></li>
       </ul>
     </div>
-
-
-      <h4 class="message-dashboard">Welkom op het dashboard</h4>
-
-
-
-
-
+    <h4 class="message-dashboard">Welkom op het dashboard</h4>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script> JQuiry libriary-->
     <!-- <script src="Projects/overzicht/js/bootstrap.js"></script> -->
   </body>

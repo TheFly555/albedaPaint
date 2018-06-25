@@ -22,9 +22,7 @@
     header("location: ../pages/updateKlant.php?signup=unvalid_postalcode");
   }
   else{
-    $sqlUpdate = "UPDATE klant SET klant_naam = '$updateKlantNaam', klant_email = '$updateKlantEmail',
-     klant_adres = '$updateKlantAdres', klant_postcode = '$updateKlantPostcode', klant_woonplaats = '$updateKlantWoonplaats'
-     WHERE klant_id = $SelectKlantUpdate;";
+    $sqlUpdate = "UPDATE klant SET klant_naam = '$updateKlantNaam', klant_email = '$updateKlantEmail', klant_adres = '$updateKlantAdres', klant_postcode = '$updateKlantPostcode', klant_woonplaats = '$updateKlantWoonplaats' WHERE klant_id = $SelectKlantUpdate;";
     mysqli_query($conn, $sqlUpdate);
     header("location: ../pages/klanten.php?insert=succes");
   }
