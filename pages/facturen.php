@@ -41,6 +41,7 @@
       </table>
       <br><br>
       <a href="insert/insertFactuur.php" class="link">- <u>Maak een factuur aan</u></a><br>
+      <a href="download/downloadFactuurPdf.php" class="link">- <u>Downlaod PDF factuur</u></a><br>
       <!-- <a href="updateKlant.php">- Verander een klant</a><br>
         <a href="deleteKlant.php">- Verwijder een klant</a> -->
     </div>
