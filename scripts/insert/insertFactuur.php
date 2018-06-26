@@ -1,6 +1,6 @@
 <?php
   //include database connect file
-  include_once 'connect.php';
+  include_once '../connect.php';
 
   //Constanten
   $insertFactuurPrijs = $_POST['insertFactuurPrijs'];
@@ -20,7 +20,7 @@
 
   //if Condition: check if submit button is clicked and redirect
   if (!isset($insertFactuurSubmit)) {
-    header("location: ../pages/insert/insertFactuur.php?insert=notSubmitted");
+    header("location: ../../pages/insert/insertFactuur.php?insert=notSubmitted");
   }
   //Else condition: Add entry to the database
   else{
@@ -30,11 +30,6 @@
     mysqli_query($conn, $sqlInsertFactuur);
     mysqli_query($conn, $sqlInsertOfferteRegel);
 
-    header("location: ../pages/facturen.php?insert=succes");
+    header("location: ../../pages/facturen.php?insert=succes");
   }
-
-
- function insertOfferteRegel() {
-
- }
 ?>

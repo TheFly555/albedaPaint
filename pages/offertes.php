@@ -44,6 +44,8 @@
       </table>
       <br><br>
       <a href="insert/insertOfferte.php" class="link">- <u>Maak een offerte aan</u></a><br>
+      <a href="update/updateOfferte.php" class="link">- <u>Verander offerte</u></a><br>
+      <a href="delete/deleteOfferte.php" class="link">- <u>verwijder offerte</u></a><br>
       <!-- <a href="updateKlant.php">- Verander een klant</a><br>
         <a href="deleteKlant.php">- Verwijder een klant</a> -->
     </div>

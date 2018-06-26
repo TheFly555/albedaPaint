@@ -32,7 +32,7 @@
     <?php include_once '../templates/errorMessage.php'; ?>
     <div class="container">
       <h1>Klant veranderen:</h1>
-      <form action="../../scripts/updateklant.php" method="post">
+      <form action="../../scripts/update/updateklant.php" method="post">
         <table class="table-form">
           <tr>
             <td class="formText">

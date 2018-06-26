@@ -32,7 +32,7 @@
     <?php include_once '../templates/errorMessage.php'; ?>
     <div class="container">
       <h1>Klant toevoegen:</h1>
-      <form action="../../scripts/insertklant.php" method="post">
+      <form action="../../scripts/insert/insertklant.php" method="post">
         <table class="table-form">
           <tr>
             <td class="formText">
@@ -71,7 +71,7 @@
         </table>
       </form>
       <br><br><br>
-      <form class="" action="../../scripts/insertmemo.php" method="post">
+      <form class="" action="../../scripts/insert/insertmemo.php" method="post">
         <table class="table-form">
           <tr>
             <td  class="formText">

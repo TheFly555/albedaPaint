@@ -24,50 +24,40 @@
     </nav>
     <div class="navigation-left">
       <ul class="navigation-left-list">
-        <li><a href="../klanten.php">klanten</a></li>
+        <li><a href="../klanten.php">Klanten</a></li>
         <li><a href="../offertes.php">Offertes</a></li>
         <li><a href="../facturen.php">Facturen</a></li>
       </ul>
     </div>
-    <?php include_once 'templates/errorMessage.php'; ?>
+    <?php include_once '../templates/errorMessage.php'; ?>
     <div class="container">
-      <h1>Factuur aanmaken:</h1>
-      <form action="../../scripts/insert/insertFactuur.php" method="post">
+      <h1>Klant verwijderen:</h1>
+      <form action="../../scripts/delete/deleteOfferte.php" method="post">
         <table class="table-form">
           <tr>
             <td class="formText">
-              <h4>Factuur prijs:</h4>
+              <h4>Selecteer offerte:</h4>
             </td>
             <td>
-              <input type="number"class="inputForm" name="insertFactuurPrijs" step='0.01' value='0.00' placeholder='0.00' maxlength="8" required>
-            </td>
-          </tr>
-          <tr>
-            <td class="formText">
-              <h4>Factuur datum:</h4>
-            </td>
-            <td><input type="date" class="inputForm" name="insertFactuurDatum" placeholder="Datum" required> </td>
-          </tr>
-          <tr>
-            <td class="formText">
-              <h4>Koppel aan een offerte:</h4>
-            </td>
-            <td>
-              <select class="inputForm" name="insertFactuurRegelOffertenummer" required>
+              <select class="inputForm" name="selectDeleteOfferte" required>
                 <option value="" disabled selected></option>
                 <?php
-                  $sqlSelectKlant = "SELECT * FROM offerte";
-                  $resultSelectKlant = mysqli_query($conn, $sqlSelectKlant);
-                  while ($rowSelectKlant = mysqli_fetch_row($resultSelectKlant)) {
-                    echo "<option value='". $rowSelectKlant[0] ."'>".  $rowSelectKlant[0] . " - " . $rowSelectKlant[1]. "</option>";
+                  $sqlSelectOfferte = "SELECT offerte.offertenummer, offerte.offerte_werkzaamheden, offerte.offerte_prijs, offerte.offertedatum, offerte.offerte_status, klant.klant_naam
+                                       FROM offerte JOIN klant ON offerte.klant_id = klant.klant_id";
+                  $resultSelectOfferte = mysqli_query($conn, $sqlSelectOfferte);
+                  while ($rowSelectOfferte = mysqli_fetch_row($resultSelectOfferte)) {
+                    echo "<option value='". $rowSelectOfferte[0] ."'>". $rowSelectOfferte[0] . " - " . $rowSelectOfferte[5] . ": " . $rowSelectOfferte[1] . "</option>";
                   }
                   ?>
               </select>
             </td>
           </tr>
+          <br>
           <tr>
-            <td></td>
-            <td><input type="submit" class="inputForm" name="insertFactuurSubmit" value="Save"> </td>
+            <td>
+              <h4></h4>
+            </td>
+            <td><button class="inputForm" name="submitDeleteOfferte">Save</button></td>
           </tr>
         </table>
       </form>

@@ -32,7 +32,7 @@
     <?php include_once '../templates/errorMessage.php'; ?>
     <div class="container">
       <h1>Klant verwijderen:</h1>
-      <form action="../../scripts/deleteklant.php" method="post">
+      <form action="../../scripts/delete/deleteklant.php" method="post">
         <table class="table-form">
           <tr>
             <td class="formText">
